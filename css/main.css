@@ -114,10 +114,19 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Bebas;
 }
 
-h3 {
+h2 {
     font-size: 1.125rem;
     font-weight: normal;
     margin-bottom: 15px;
+    word-spacing: 2px;
+    color: #e8663c;
+}
+
+h3 {
+    color: #b9b9b9;
+    font-size: 1rem;
+    font-weight: normal;
+    word-spacing: 2px;
 }
 
 p {
@@ -158,7 +167,7 @@ a {
 
 
 
-/*===== SECTIONS ==========*/
+/*===== SECTIONS HOMEPAGE ==========*/
 
 /* SLIDER SECTION */
 .banner {
@@ -199,10 +208,114 @@ a {
     padding: 18px;
 }
 
+.banner .description h2 {
+    color: #FFF;
+}
+
+.thumbnails {
+    margin-top: 15px;
+}
 
 /* END SLIDER SECTION */
 
 
+/* FEATURES SECTION */
+.feature-items {
+    margin: 40px 0;
+}
+
+.feature-item {
+    padding-right: 25px;
+}
+
+.feature-item img {
+    margin-right: 20px;
+    height: 100%;
+}
+
+.feature-item h2 {
+    margin-bottom: 30px;
+}
+
+/* END FEATURES SECTION */
+
+
+/* RECENT-WORK SECTION */
+section.recent-work {
+    margin-bottom: 40px;
+}
+
+.recent-work-item p {
+    color: #e8663c;
+    font-size: 0.6875rem;
+    font-family: Bebas;
+}
+
+.recent-work-item .desc {
+    border: 1px solid #b9b9b9;
+    border-top: none;
+    padding: 10px;
+}
+
+.recent-work .doted-line {
+    margin-top: 1px;
+}
+
+/* RECENT-WORK SECTION */
+
+
+/* FOOTER */
+footer {
+    background: url(../img/bg/page-bg-bottom.png) no-repeat;
+    background-size: 100% 265px;
+}
+
+footer .container {
+    background: #fff;
+    padding: 0 10px;
+}
+
+.footer-items {
+    background: #e8663c;
+    padding: 30px 40px 10px 40px;
+    box-sizing: border-box;
+}
+
+.footer-item {
+    width: 28%;
+}
+
+.footer-item h2 {
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+.footer-item p {
+    color: #fff;
+    margin: 15px 0 5px 0;
+}
+
+.footer-item p:first-child {
+    margin-top: 0;
+}
+
+.footer-item span {
+    color: #efa087;
+}
+
+.footer-item .time {
+    font-size: 0.75rem;
+}
+
+.contact-item {
+    margin: 15px 5px 0 0;
+}
+
+.contact-item:last-child {
+    margin-right: 0;
+}
+
+/* END FOOTER */
 
 
 /* Custom helper class */
@@ -215,12 +328,26 @@ a {
     justify-content: space-between;
 }
 
+.flex-sa {
+    display: flex;
+    justify-content: space-around;
+}
+
 .active a {
     color: #e8663c;
 }
 
-
-
+/* more btn */
+.more-btn {
+    font-family: Bebas;
+    color: #fff;
+    border: none;
+    background: #e8663c;
+    font-size: 0.75rem;
+    padding: 8px 12px;
+    font-weight: normal;
+    margin-top: 15px;
+}
 
 
 
