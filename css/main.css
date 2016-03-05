@@ -94,13 +94,130 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url(../fonts/bebas/BEBAS___.TTF);
+}
+
+html {
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-family: Bebas;
+}
+
+h3 {
+    font-size: 1.125rem;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 0.75rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+.logo {
+    margin: 10px 0;
+}
+
+.nav-items {
+    align-self: center;
+    width: 40%;
+}
+
+.nav-items a {
+    font-family: Bebas;
+    color: #b9b9b9;
+}
+
+/* END HEADER */
 
 
 
 
+/*===== SECTIONS ==========*/
+
+/* SLIDER SECTION */
+.banner {
+    background: url(../img/bg/page-bg.png) no-repeat;
+    background-size: 100% 60px;
+}
+
+.banner .container {
+    background: #fff;
+    padding: 0 10px;
+}
+
+.slider {
+    position: relative;
+}
+
+.arrow-navigation img {
+    position: absolute;
+    top: 160px;
+    cursor: pointer;
+}
+
+.banner .slide-left {
+    left: 2%;
+}
+
+.banner .slide-right {
+    right: 2%;
+}
+
+.banner .description {
+    background: rgba(232, 102, 60, 0.9);
+    position: absolute;
+    top: 245px;
+    left: 2%;
+    color: #fff;
+    width: 42%;
+    padding: 18px;
+}
+
+
+/* END SLIDER SECTION */
 
 
 
+
+/* Custom helper class */
+.flex {
+    display: flex;
+}
+
+.flex-sb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.active a {
+    color: #e8663c;
+}
 
 
 
