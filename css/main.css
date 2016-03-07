@@ -170,16 +170,6 @@ a {
 /*===== SECTIONS HOMEPAGE ==========*/
 
 /* SLIDER SECTION */
-.banner {
-    background: url(../img/bg/page-bg.png) no-repeat;
-    background-size: 100% 60px;
-}
-
-.banner .container {
-    background: #fff;
-    padding: 0 10px;
-}
-
 .slider {
     position: relative;
 }
@@ -264,6 +254,25 @@ section.recent-work {
 /* RECENT-WORK SECTION */
 
 
+/*===== END SECTIONS HOMEPAGE ==========*/
+
+
+
+
+
+
+
+/*===== SECTIONS ABOUT-US PAGE ==========*/
+
+/*===== END SECTIONS ABOUT-US PAGE ==========*/
+
+
+
+
+
+
+
+
 /* FOOTER */
 footer {
     background: url(../img/bg/page-bg-bottom.png) no-repeat;
@@ -337,6 +346,10 @@ footer .container {
     color: #e8663c;
 }
 
+.active span {
+    color: #F3AF9D;
+}
+
 /* more btn */
 .more-btn {
     font-family: Bebas;
@@ -348,6 +361,21 @@ footer .container {
     font-weight: normal;
     margin-top: 15px;
 }
+
+/* banner section default */
+.banner {
+    background: url(../img/bg/page-bg.png) no-repeat;
+    background-size: 100% 60px;
+}
+
+.banner .container {
+    background: #fff;
+    padding: 0 10px;
+}
+
+/* end banner section default */
+
+/* END Custom helper class*/
 
 
 
