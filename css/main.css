@@ -536,14 +536,25 @@ footer .container {
         border-bottom: 1px solid grey;
         border-top: 1px solid #C3C3C3;
         box-shadow: 0px 1px 1px 0px grey;
-        margin-bottom: 20px;
     }
 
     header .nav-item {
         margin-bottom: 20px;
         border-bottom: 1px solid #C3C3C3;
     }
+
+    header .nav-item:first-child {
+        margin-top: 20px;
+    }
     /* END HEADER */
+
+
+    /* BANNER SECTION */
+    section.banner .container {
+        background: #F3AF9D;
+        padding: 40px 0;
+    }
+    /* END BANNER SECTION*/
 
 
     /* RECENT-WORK SECTION */
