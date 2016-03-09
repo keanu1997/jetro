@@ -117,7 +117,6 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
     font-size: 1.125rem;
     font-weight: normal;
-    margin-bottom: 15px;
     word-spacing: 2px;
     color: #e8663c;
 }
@@ -200,6 +199,7 @@ a {
 
 .banner .description h2 {
     color: #FFF;
+    margin-bottom: 15px;
 }
 
 .thumbnails {
@@ -263,6 +263,60 @@ section.recent-work {
 
 
 /*===== SECTIONS ABOUT-US PAGE ==========*/
+.about-main {
+    width: 71.38%;
+}
+
+aside {
+    height: 420px;
+    background: purple;
+    width: 23.52%;
+}
+
+/* SECTION IMG-FLOAT */
+section.img-float {
+    margin: 20px 0;
+}
+
+section.img-float .img-container {
+    width: 30%;
+}
+
+section.img-float .img-container img {
+    width: 100%;
+}
+
+section.img-float .text-box {
+    width: 66%;
+    padding-top: 5px;
+}
+/* END SECTION IMG-FLOAT */
+
+/* PARAGRAPH SECTION */
+section.paragraph p {
+    margin-bottom: 20px;
+}
+
+section.paragraph p:last-child {
+    margin-bottom: none;
+}
+/* END PARAGRAPH SECTION */
+
+
+/* DROP-CAPS SECTION */
+
+/* END DROP-CAPS SECTION*/
+
+
+
+/* QUOTE SECTION */
+section.quote {
+    width: 80%;
+    text
+}
+/* END QUOTE SECTION*/
+
+
 
 /*===== END SECTIONS ABOUT-US PAGE ==========*/
 
@@ -327,6 +381,8 @@ footer .container {
 /* END FOOTER */
 
 
+
+
 /* Custom helper class */
 .flex {
     display: flex;
@@ -342,12 +398,24 @@ footer .container {
     justify-content: space-around;
 }
 
+.flex-fe {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .active a {
     color: #e8663c;
 }
 
 .active span {
     color: #F3AF9D;
+}
+
+span.DropCaps {
+    font-size: 2.25rem;
+    color: #e8663c;
+    font-family: arial;
+    font-weight: bold;
 }
 
 /* more btn */
@@ -372,6 +440,20 @@ footer .container {
     background: #fff;
     padding: 0 10px;
 }
+
+/* BANNER TITLE */
+.banner .title {
+    background: #E8663C;
+    margin-bottom: 25px;
+}
+
+.banner .title h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: arial;
+    margin: 12px 0 12px 15px;
+}
+/* END BANNER TITLE*/
 
 /* end banner section default */
 
@@ -553,6 +635,10 @@ footer .container {
 @media screen and (max-width: 440px) {
 
     /* HEADER */
+    header {
+        margin: 0;
+    }
+
     header .flex-sb {
         flex-direction: column;
         width: 100%;
@@ -575,12 +661,11 @@ footer .container {
         margin-top: 20px;
     }
     /* END HEADER */
-
+    
 
     /* BANNER SECTION */
     section.banner .container {
-        background: #F3AF9D;
-        padding: 40px 0;
+        padding: 0;
     }
     /* END BANNER SECTION*/
 
@@ -596,8 +681,6 @@ footer .container {
 
     /* END RECENT-WORK SECTION */
 }
-
-
 
 
 /*===== END MEDIA QUIRIES ===========*/
