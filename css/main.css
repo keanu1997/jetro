@@ -211,7 +211,7 @@ a {
 
 /* FEATURES SECTION */
 .feature-items {
-    margin: 40px 0;
+    margin: 30px 0;
 }
 
 .feature-item {
@@ -233,6 +233,10 @@ a {
 /* RECENT-WORK SECTION */
 section.recent-work {
     margin-bottom: 40px;
+}
+
+section.recent-work .recent-work-title {
+    margin-bottom: 20px;
 }
 
 .recent-work-item p {
@@ -304,15 +308,23 @@ section.paragraph p:last-child {
 
 
 /* DROP-CAPS SECTION */
-
+section.drop-caps span.DropCaps {
+    float: left;
+    line-height: 30px;
+}
 /* END DROP-CAPS SECTION*/
 
 
 
 /* QUOTE SECTION */
 section.quote {
-    width: 80%;
-    text
+    margin: 20px 0; 
+}
+
+section.quote p {
+    border-left: 10px solid #e8663c;
+    padding-left: 20px;
+    width: 82%;
 }
 /* END QUOTE SECTION*/
 
@@ -411,12 +423,18 @@ footer .container {
     color: #F3AF9D;
 }
 
+/* spans */
 span.DropCaps {
     font-size: 2.25rem;
     color: #e8663c;
     font-family: arial;
     font-weight: bold;
 }
+
+span.italic {
+    font-style: italic;
+}
+/* end spans */
 
 /* more btn */
 .more-btn {
@@ -504,8 +522,8 @@ span.DropCaps {
     .thumbnails {
         width: 100%;
         margin: 15px auto;
-
-
+        padding: 0 10px;
+        box-sizing: border-box;
     }
 
     .thumbnail:last-child {
@@ -525,7 +543,7 @@ span.DropCaps {
     .feature-item {
         margin: 0 auto;
         margin-bottom: 40px;
-        padding: 30px;
+        padding: 5px 0 30px 0;
         width: 85%;
         border-bottom: 1px solid #b9b9b9;
     }
@@ -549,6 +567,7 @@ span.DropCaps {
 
     .recent-work h2 {
         margin-left: 40px;
+
     }
 
     .recent-work .doted-line {
@@ -556,6 +575,13 @@ span.DropCaps {
     }
 
     /* END RECENT-WORK SECTION */
+
+
+    /* ABOUT-MAIN */
+    .about-main {
+        padding-left: 5px;
+    }  
+    /* END ABOUT-MAIN*/
 
 
     /* FOOTER */
@@ -636,7 +662,6 @@ span.DropCaps {
     /* END BANNER SECTION */
 
     /* RECENT-WORK SECTION */
-
     .recent-work-item {
         width: 30%;
     }
@@ -700,7 +725,6 @@ span.DropCaps {
 
     /* END RECENT-WORK SECTION */
 }
-
 
 /*===== END MEDIA QUIRIES ===========*/
 
