@@ -464,11 +464,10 @@ span.DropCaps {
 
 /*===== MEDIA QUIRIES ==========*/
 @media screen and (max-width: 980px) {
-
+    
     /* HEADER */
     header .container{
-        width: 100%;
-        justify-content: space-around;
+       padding: 0 5px;
     }
 
     .nav-items {
@@ -488,6 +487,14 @@ span.DropCaps {
 
     .slider .arrow-navigation img {
         top: 30%;
+    }
+
+    .banner {
+        background: none;
+    }
+
+    .banner .container {
+        padding: 0;
     }
 
     .banner .description {
@@ -549,6 +556,18 @@ span.DropCaps {
     }
 
     /* END RECENT-WORK SECTION */
+
+
+    /* FOOTER */
+    footer {
+        background: none;
+    }
+
+    footer .container {
+        padding: 0;
+    }
+    /* END FOOTER*/
+
 }
 
 
