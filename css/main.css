@@ -144,7 +144,7 @@ a {
     max-width: 940px;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 5px;
 }
 
 /* HEADER */
@@ -872,6 +872,10 @@ span.italic {
     /* HEADER */
     header {
         margin: 0;
+    }
+
+    header .container, header .header-top {
+        padding: 0;
     }
 
     header .flex-sb {
