@@ -271,12 +271,6 @@ section.recent-work .recent-work-title {
     width: 71.38%;
 }
 
-aside {
-    height: 420px;
-    background: purple;
-    width: 23.52%;
-}
-
 /* SECTION IMG-FLOAT */
 section.img-float {
     margin: 20px 0;
@@ -328,13 +322,100 @@ section.quote p {
 }
 /* END QUOTE SECTION*/
 
+/* COLUMNS SECTION */
+section.columns {
+    margin: 30px 0;
+    font-family: 0.75rem;
+    width: 100%;
+}
+/* END 2-COLUMNS SECTION */
+
+/*  ALERTS SECTION */
+.alert-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.alert-item:last-child {
+    margin-bottom: 30px;
+}
+
+.alert-item h5 {
+    font-family: helvetica;
+    font-style: italic;
+    font-size: 0.875rem;
+    font-weight: normal;
+    margin: 25px;
+}
+
+.green-alert {
+    background: #effeb9;
+    color: #98c601;
+    border: 1px solid #98c601;
+}
+
+.red-alert {
+    background: #fbcbc1;
+    color: #eb5439;
+    border: 1px solid #eb5439;
+}
+
+.orange-alert {
+    background: #ffe9ad;
+    color: #fab418;
+    border: 1px solid #fab418;
+}
+
+.blue-alert {
+    background: #d1e4f3;
+    color: #4d8fcb;
+    border: 1px solid #4d8fcb;
+}
+/* END ALERTS SECTION */
+
 
 
 /*===== END SECTIONS ABOUT-US PAGE ==========*/
 
 
 
+/* SIDEBAR */
+.sidebar {
+    width: 23.52%;
+}
 
+.sidebar-item .title {
+    margin: 40px 0 22px 0;
+}
+
+.sidebar-item h3 {
+    color: #e8603c;
+    font-size: 0.875rem;
+}
+
+.sidebar-item a {
+    font-family: helvetica;
+    font-size: 0.75rem;
+    color: #000;
+}
+
+.thumbbox-items {
+    margin-bottom: 5px;
+}
+
+.thumbbox-items:last-child {
+    margin-bottom: 0;
+}
+
+.thumbbox-item {
+    height: 50px;
+    width: 50px;
+    background: #f3af9d;
+    border: 1px solid #e8603c;
+}
+/* END SIDEBAR*/
 
 
 
@@ -413,6 +494,14 @@ footer .container {
 .flex-fe {
     display: flex;
     justify-content: flex-end;
+}
+
+.col-2 {
+    width: 46%; 
+}
+
+.col-3 {
+    width: 31%;
 }
 
 .active a {
@@ -579,7 +668,8 @@ span.italic {
 
     /* ABOUT-MAIN */
     .about-main {
-        padding-left: 5px;
+        padding: 0 5px;
+        box-sizing: border-box;
     }  
     /* END ABOUT-MAIN*/
 
@@ -597,7 +687,39 @@ span.italic {
 }
 
 
+@media screen and (max-width: 940px) {
+    .about-pagewrapper {
+        display: inline;
+    }
+
+    .about-main {
+        width: 100%;
+    }
+
+    .sidebar {
+        padding: 0 5px;
+        box-sizing: border-box;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .sidebar-items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sidebar-item {
+        width: 30%;
+    }
+
+    .sidebar-item .title img {
+        display: none;
+    }
+}
+
+
 @media screen and (max-width: 810px) {
+
     /* SLIDER SECTION */
 
     .slider .arrow-navigation img {
@@ -655,7 +777,7 @@ span.italic {
     }
     /* END BANNER SECTION */
 
-    /* BANNER SECTION*/
+    /* BANNER SECTION */
     .slider .description {
         display: none;
     }
@@ -674,6 +796,66 @@ span.italic {
         display: none;
     }
     /* END RECENT-WORK SECTION */
+    
+    /* COLUMNS SECTION */
+    .columns {
+        flex-direction: column;
+    }
+
+    .columns p {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .columns p:last-of-type {
+        margin-bottom: 0;
+    }
+    /* END COLUMNS SECTION */
+
+    /* SIDEBAR */
+    .sidebar-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar-item {
+        width: 80%;
+        border-bottom: 1px solid #B9B9B9;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    .sidebar .thumbbox-item {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 15px;
+    }
+    /* END SIDEBAR */
+}
+
+@media screen and (max-width: 560px) {
+
+    /* IMG-FLOAT SECTION */
+    .img-float {
+        flex-direction: column;
+    }
+
+    section.img-float .img-container {
+        width: 35%;
+    }
+
+    section.img-float .text-box {
+        width: 100%;
+    }
+    /* IMG-FLOAT SECTION */
+
+    /* SIDEBAR */
+    .sidebar .thumbbox-item {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 10px;
+    }
+    /* END SIDEBAR */
 }
 
 @media screen and (max-width: 440px) {
@@ -724,6 +906,14 @@ span.italic {
     }
 
     /* END RECENT-WORK SECTION */
+
+    /* SIDEBAR */
+    .sidebar .thumbbox-item {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 5px;
+    }
+    /* END SIDEBAR */
 }
 
 /*===== END MEDIA QUIRIES ===========*/
