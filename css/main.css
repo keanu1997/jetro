@@ -143,10 +143,10 @@ a {
 .container {
     max-width: 940px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 /* HEADER */
-
 .logo {
     margin: 10px 0;
 }
@@ -573,9 +573,6 @@ span.italic {
 @media screen and (max-width: 980px) {
     
     /* HEADER */
-    header .container{
-       padding: 0 5px;
-    }
 
     .nav-items {
         width: 60%;
