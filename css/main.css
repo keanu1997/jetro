@@ -268,7 +268,9 @@ section.recent-work .recent-work-title {
 /*===== END SECTIONS HOMEPAGE ==========*/
 
 
-
+iframe {
+    width: 100%;
+}
 
 
 
@@ -562,6 +564,116 @@ section.columns {
 }
 /* END PORTFOLIO SECTION */
 
+/* ITEM-DETAILS SECTION */
+.item-details img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.item-details p {
+    margin-bottom: 20px;
+}
+/* END ITEM-DETAILs SECTION */
+
+/* RELATED-ITEMS SECTION */
+.related-items .recent-work-title {
+    margin-bottom: 20px;
+}
+/* END RELATED-ITEMS SECTION */
+
+/* CONTACT SECTION */
+.contact-maps {
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.contact-details {
+    width: 25%;
+}
+
+.contact-details p {
+    margin-bottom: 15px;
+}
+
+.contact-details h6 {
+    font-size: 0.75rem;
+    font-family: arial;
+    color: #e8603c;
+}
+
+.contact-details ul:first-of-type {
+    margin-bottom: 15px;
+}
+
+.contact-details li {
+    font-size: 0.75rem;
+    font-family: arial;
+}
+
+.contact-form {
+    width: 70%;
+}
+
+.contact-form .form-group {
+    margin-bottom: 10px;
+}
+
+.contact-form .form-group:last-of-type {
+    margin-bottom: 40px;
+}
+
+.contact-form .form-group input {
+    padding: 10px 0 10px 10px;
+}
+
+.contact-form .form-group input:last-of-type {
+    padding: 10px;
+    font-family: Bebas;
+    font-size: 0.75rem;
+    font-weight: normal;
+}
+
+.contact-form .form-group textarea {
+    resize: none;
+    padding: 10px 0 0 10px;
+    width: 100%;
+}
+
+.contact-form .form-group input, .contact-form .form-group textarea {
+    border: 1px solid #e8603c;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #e8603c;
+  font-family: Bebas;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #e8603c;
+  font-family: Bebas;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #e8603c;
+  font-family: Bebas;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #e8603c;
+  font-family: Bebas;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.contact-form .submit {
+    background: #e8663c;
+    color: #fff;
+}
+/* END CONTACT SECTION */
+
 
 /* FOOTER */
 footer {
@@ -724,7 +836,7 @@ span.italic {
 .banner .title h2 {
     color: #fff;
     font-size: 1.5rem;
-    font-family: arial;
+    font-family: Bebas;
     margin: 12px 0 12px 15px;
 }
 /* END BANNER TITLE*/
@@ -833,12 +945,12 @@ span.italic {
 
     }
 
-    .recent-work .doted-line {
+    .recent-work-title .doted-line {
         display: none;
     }
 
     /* END RECENT-WORK SECTION */
-
+    
 
     /* FOOTER */
     footer {
@@ -1016,6 +1128,34 @@ span.italic {
         margin-bottom: 15px;
     }
     /* END SIDEBAR */
+
+    /* CONTACT SECTION */
+    .contact {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-details {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    
+    .contact-details p {
+        width: 100%;
+    }
+
+    .contact-form {
+        margin: 0 auto;
+        width: 80%;
+        border-bottom: 1px solid #B9B9B9;
+    }
+
+    .contact-form .form-group textarea {
+        height: 100px;
+    }
+    /* END CONTACT SECTION */
 }
 
 @media screen and (max-width: 560px) {
